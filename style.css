@@ -53,12 +53,7 @@
 .start img{
     max-width: 100%;
     height: auto;
-    user-drag: none;
-    -webkit-user-drag: none;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
+    z-index: 1;
 }
 
 .start_container{
@@ -66,6 +61,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 2;
 }
 
 .arrows{
@@ -80,12 +76,6 @@
 
 .game img{
     height: 250px;
-    user-drag: none;
-    -webkit-user-drag: none;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
 }
 
 .game h1{
@@ -151,12 +141,6 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    user-drag: none;
-    -webkit-user-drag: none;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
 }
 
 .results table{
@@ -191,4 +175,56 @@
     background: none;
     font-size: 30px;
     text-decoration: underline;
+}
+
+.reveal-bottom{
+    position: relative;
+    transform: translateY(50px);
+    opacity:0;
+    transition: all 0.7s ease;
+}
+
+.reveal{
+    position: relative;
+    opacity:0;
+    transition: all 0.7s ease;
+    transition-delay: 0.7s;
+}
+
+.reveal.active{
+    opacity:1;
+}
+
+.reveal-bottom.active{
+    transform: translateY(0px);
+    opacity:1;
+}
+
+.reveal-button{
+    position: relative;
+    opacity:0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    transition-delay: 1.2s;
+}
+
+.reveal-button.active{
+    transform: translateY(0px);
+    opacity:1;
+}
+
+.reveal-button.active.fade{
+    opacity:0;
+    transition: all 0.7s ease;
+}
+
+.reveal.active.fade{
+    opacity:0;
+    transition: all 0.7s ease;
+}
+
+.reveal-bottom.active.top{
+    transform: translateY(-305%);
+    transition: all 0.7s ease;
+    transition-delay: 1s;
 }

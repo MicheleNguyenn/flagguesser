@@ -59,17 +59,6 @@ function init(){
     image.src = image_name;
     image.name = first;
 
-    let game = document.getElementById("game");
-    game.style.display = "block";
-    let results = document.getElementById("results");
-    results.style.display = "none";
-    let sect = document.getElementById("sect");
-    sect.classList.remove("sect-result");
-    sect.classList.add("sect");
-    let start_button = document.getElementById("start");
-    start_button.style.display = "none";
-    document.getElementById("input_nation").focus();
-
     var countDownDate = new Date();
     countDownDate.setSeconds(countDownDate.getSeconds() + (18 * 60));
 
