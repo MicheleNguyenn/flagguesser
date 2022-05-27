@@ -20,39 +20,39 @@
         <div id="start" class="start">
             <div class="start_container">
                 <h1 id="start_title" class="reveal-bottom">Flag Guesser</h1>
-                <button onclick="init_style()" id="start_button" class="reveal-button">Start</button>
+                <button onclick="init_style()" id="start_button" class="reveal-button">START</button>
             </div>
             <img src="map.png" id="start_map" class="reveal">
         </div>
         <div id="game" class="game">
             <h1 id="game_title">Flag Guesser</h1>
-            <table class="data">
-                <tr>
-                    <td>
-                        <span id="time">18:00</span>
-                    </td>
-                    <td>
-                        <span>Score: <span id="score">0</span>/194</span>
-                    </td>
-                    <td><button onclick="result()"><i class="fa fa-flag-o" aria-hidden="true"></i></button></td>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <td>
-                        <button onclick="prev()" class="arrows"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></button>
-                    </td>
-                    <td class="flag_container">
-                        <img src="" id="flag">
-                    </td>
-                    <td>
-                        <button onclick="next()" class="arrows"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
-                    </td>
-                </tr>
-            </table>
-            <div class="input_container">
-                <input id="input_nation" oninput="check()" class="input-bar" autocomplete="off" autofocus>
-            </div>
+                <table class="data">
+                    <tr>
+                        <td>
+                            <span id="time">18:00</span>
+                        </td>
+                        <td>
+                            <span>Score: <span id="score">0</span>/194</span>
+                        </td>
+                        <td><button onclick="result()"><i class="fa fa-flag-o" aria-hidden="true"></i></button></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <button onclick="prev()" class="arrows"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></button>
+                        </td>
+                        <td class="flag_container">
+                            <img src="" id="flag">
+                        </td>
+                        <td>
+                            <button onclick="next()" class="arrows"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+                        </td>
+                    </tr>
+                </table>
+                <div class="input_container">
+                    <input id="input_nation" oninput="check()" class="input-bar" autocomplete="off" autofocus>
+                </div>
         </div>
         <div id="results" class="results">
             <div>
@@ -65,7 +65,7 @@
                             <span class="score">Score: <span id="score_2">0</span>/194 (<span id="perc"></span>%)</span>
                         </td>
                         <td>
-                            <button onclick="init()">Play again</button>
+                            <button onclick="init_style()">Play again</button>
                         </td>
                     </tr>
                 </table>

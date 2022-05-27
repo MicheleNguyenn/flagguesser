@@ -28,6 +28,6 @@ function init_style(){
         document.getElementById("input_nation").focus();
 
         init();
-    }, 1700);
+    }, 1500);
 
 }
