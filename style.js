@@ -31,3 +31,10 @@ function init_style(){
     }, 1500);
 
 }
+
+function result_style(){
+    let game_container = document.getElementById("game_container");
+    game_container.classList.add('fade');
+    let game = document.getElementById("game");
+    game.classList.add('down');
+}

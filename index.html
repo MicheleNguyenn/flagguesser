@@ -26,6 +26,7 @@
         </div>
         <div id="game" class="game">
             <h1 id="game_title">Flag Guesser</h1>
+            <div id="game_container" class="game_container">
                 <table class="data">
                     <tr>
                         <td>
@@ -53,10 +54,11 @@
                 <div class="input_container">
                     <input id="input_nation" oninput="check()" class="input-bar" autocomplete="off" autofocus>
                 </div>
+            </div>
         </div>
         <div id="results" class="results">
             <div>
-                <h1>Flag Guesser</h1>
+                <h1 class="result_title" id="result_title">Flag Guesser</h1>
             </div>
             <div class="result_container">
                 <table>
@@ -65,7 +67,7 @@
                             <span class="score">Score: <span id="score_2">0</span>/194 (<span id="perc"></span>%)</span>
                         </td>
                         <td>
-                            <button onclick="init_style()">Play again</button>
+                            <button onclick="init()">Play again</button>
                         </td>
                     </tr>
                 </table>

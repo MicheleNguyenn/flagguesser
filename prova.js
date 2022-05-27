@@ -50,6 +50,19 @@ function init(){
     score = 0;
     i = 0;
     flag = 0;
+    let game_container = document.getElementById("game_container");
+    game_container.classList.remove('fade');
+    let game = document.getElementById("game");
+    game.style.display = "block";
+    game.classList.remove('down');
+    let results = document.getElementById("results");
+    results.style.display = "none";
+    let sect = document.getElementById("sect");
+    sect.classList.remove("sect-result");
+    sect.classList.add("sect");
+    let start_button = document.getElementById("start");
+    start_button.style.display = "none";
+    document.getElementById("input_nation").focus();
     let score_num = document.getElementById("score");
     score_num.textContent = score;
     nations_list.forEach(e => dict[e] = 0);
@@ -156,40 +169,43 @@ function next(){
 
 function result(){
     flag = 1;
+    result_style();
     //display elements
-    let content = document.getElementById("game");
-    content.style.display = "none";
-    let results = document.getElementById("results");
-    results.style.display = "block";
-    let sect = document.getElementById("sect");
-    sect.classList.remove("sect");
-    sect.classList.add("sect-result");
-    let score_num = document.getElementById("score_2");
-    score_num.textContent = score;
-    let perc = document.getElementById("perc");
-    perc.textContent = (score/194 * 100).toFixed(1);
-    table = document.getElementById("table_results");
-    let x = 0;
-    var row = table.insertRow();
-    nations_list.forEach(elem => {
-        let cell = row.insertCell();
-        let image = document.createElement("img");
-        let image_name = "flags/" + elem + ".jpg";
-        image.src = image_name;
-        cell.appendChild(image);
-        let name = document.createElement("p");
-        name.textContent = elem;
-        if (dict[elem] == 0) {
-            image.style.filter = "grayscale(100%)";
-            image.setAttribute("onmouseover","changeColor_1(this)")
-            image.setAttribute("onmouseout","changeColor_2(this)")
-        }
-        cell.append(name);
-        x = x + 1;
-        if (x % 5 == 0){
-            row = table.insertRow();
-        }
-    })
+    setTimeout(function() {
+        let content = document.getElementById("game");
+        content.style.display = "none";
+        let results = document.getElementById("results");
+        results.style.display = "block";
+        let sect = document.getElementById("sect");
+        sect.classList.remove("sect");
+        sect.classList.add("sect-result");
+        let score_num = document.getElementById("score_2");
+        score_num.textContent = score;
+        let perc = document.getElementById("perc");
+        perc.textContent = (score/194 * 100).toFixed(1);
+        table = document.getElementById("table_results");
+        let x = 0;
+        var row = table.insertRow();
+        nations_list.forEach(elem => {
+            let cell = row.insertCell();
+            let image = document.createElement("img");
+            let image_name = "flags/" + elem + ".jpg";
+            image.src = image_name;
+            cell.appendChild(image);
+            let name = document.createElement("p");
+            name.textContent = elem;
+            if (dict[elem] == 0) {
+                image.style.filter = "grayscale(100%)";
+                image.setAttribute("onmouseover","changeColor_1(this)")
+                image.setAttribute("onmouseout","changeColor_2(this)")
+            }
+            cell.append(name);
+            x = x + 1;
+            if (x % 5 == 0){
+                row = table.insertRow();
+            }
+        })
+    }, 1000);
 }
 
 function shuffle(array) {
