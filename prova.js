@@ -6,7 +6,7 @@ var nations_list = ['Afghanistan','Albania','Algeria','Andorra','Angola','Antigu
                     'Dominican Republic','North Korea','Democratic Republic of the Congo','Ecuador','Egypt','El Salvador',
                     'Equatorial Guinea','Eritrea','Estonia','Eswatini','Ethiopia','Fiji','Finland','France','Gabon','The Gambia',
                     'Georgia','Germany','Ghana','Greece','Grenada','Guatemala','Guinea','Guinea Bissau','Guyana','Haiti',
-                    'Vatican City','Honduras','Hungary','Iceland','India','Indonesia','Iran','Iraq','Ireland','Israel',
+                    'Honduras','Hungary','Iceland','India','Indonesia','Iran','Iraq','Ireland','Israel',
                     'Italy','Jamaica','Japan','Jordan','Kazakhstan','Kenya','Kiribati','Kuwait','Kyrgyzstan','Laos','Latvia',
                     'Lebanon','Lesotho','Liberia','Libya','Liechtenstein','Lithuania','Luxembourg','Madagascar','Malawi','Malaysia',
                     'Maldives','Mali','Malta','Marshall Islands','Mauritania','Mauritius','Mexico','Micronesia','Moldova',
@@ -18,7 +18,7 @@ var nations_list = ['Afghanistan','Albania','Algeria','Andorra','Angola','Antigu
                     'South Africa','South Korea','South Sudan','Spain','Sri Lanka','St Vincent Grenadines','Palestine','Sudan',
                     'Suriname','Sweden','Switzerland','Syria','Tajikistan','Tanzania','Thailand','Timor Leste','Togo','Tonga',
                     'Trinidad and Tobago','Tunisia','Turkey','Turkmenistan','Tuvalu','UAE','UK','USA','Uganda','Ukraine',
-                    'Uruguay','Uzbekistan','Vanuatu','Venezuela','Vietnam','Yemen','Zambia','Zimbabwe'];
+                    'Uruguay','Uzbekistan','Vanuatu','Vatican City','Venezuela','Vietnam','Yemen','Zambia','Zimbabwe'];
 var nations_list_shuffle = ['Afghanistan','Albania','Algeria','Andorra','Angola','Antigua and Barbuda','Argentina','Armenia','Australia',
                             'Austria','Azerbaijan','Bahamas','Bahrain','Bangladesh','Barbados','Belarus','Belgium','Belize','Benin',
                             'Bhutan','Bolivia','Bosnia and Herzegovina','Botswana','Brazil','Brunei','Bulgaria','Burkina Faso','Burundi',
@@ -27,7 +27,7 @@ var nations_list_shuffle = ['Afghanistan','Albania','Algeria','Andorra','Angola'
                             'Dominican Republic','North Korea','Democratic Republic of the Congo','Ecuador','Egypt','El Salvador',
                             'Equatorial Guinea','Eritrea','Estonia','Eswatini','Ethiopia','Fiji','Finland','France','Gabon','The Gambia',
                             'Georgia','Germany','Ghana','Greece','Grenada','Guatemala','Guinea','Guinea Bissau','Guyana','Haiti',
-                            'Vatican City','Honduras','Hungary','Iceland','India','Indonesia','Iran','Iraq','Ireland','Israel',
+                            'Honduras','Hungary','Iceland','India','Indonesia','Iran','Iraq','Ireland','Israel',
                             'Italy','Jamaica','Japan','Jordan','Kazakhstan','Kenya','Kiribati','Kuwait','Kyrgyzstan','Laos','Latvia',
                             'Lebanon','Lesotho','Liberia','Libya','Liechtenstein','Lithuania','Luxembourg','Madagascar','Malawi','Malaysia',
                             'Maldives','Mali','Malta','Marshall Islands','Mauritania','Mauritius','Mexico','Micronesia','Moldova',
@@ -39,7 +39,7 @@ var nations_list_shuffle = ['Afghanistan','Albania','Algeria','Andorra','Angola'
                             'South Africa','South Korea','South Sudan','Spain','Sri Lanka','St Vincent Grenadines','Palestine','Sudan',
                             'Suriname','Sweden','Switzerland','Syria','Tajikistan','Tanzania','Thailand','Timor Leste','Togo','Tonga',
                             'Trinidad and Tobago','Tunisia','Turkey','Turkmenistan','Tuvalu','UAE','UK','USA','Uganda','Ukraine',
-                            'Uruguay','Uzbekistan','Vanuatu','Venezuela','Vietnam','Yemen','Zambia','Zimbabwe'];
+                            'Uruguay','Uzbekistan','Vanuatu','Vatican City','Venezuela','Vietnam','Yemen','Zambia','Zimbabwe'];
 var nations_list_shuffle = shuffle(nations_list_shuffle);
 var i = 0;
 var score = 0;
