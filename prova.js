@@ -40,13 +40,14 @@ var nations_list_shuffle = ['Afghanistan','Albania','Algeria','Andorra','Angola'
                             'Suriname','Sweden','Switzerland','Syria','Tajikistan','Tanzania','Thailand','Timor Leste','Togo','Tonga',
                             'Trinidad and Tobago','Tunisia','Turkey','Turkmenistan','Tuvalu','UAE','UK','USA','Uganda','Ukraine',
                             'Uruguay','Uzbekistan','Vanuatu','Vatican City','Venezuela','Vietnam','Yemen','Zambia','Zimbabwe'];
-var nations_list_shuffle = shuffle(nations_list_shuffle);
+var nations_list_shuffle;
 var i = 0;
 var score = 0;
 var dict = {};
 var flag = 0;
 
 function init(){
+    nations_list_shuffle = shuffle(nations_list_shuffle);
     score = 0;
     i = 0;
     flag = 0;
